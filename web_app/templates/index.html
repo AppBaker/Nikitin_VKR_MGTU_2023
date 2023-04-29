@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Погнозирование свойств композитных материалов</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    
+
+    
+</head>
+<body>
+
+<main class="form-signin w-50 m-auto">
+  <form method="post">
+    <div class="text-center">
+      <img class="mb-4" src="static/images/kompozit.png" alt="" width="200">
+    </div>
+   
+    <h1 class="h3 mb-3 fw-normal text-center">{{ text }}</h1>
+<!-- Плотность plot -->
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingInput" name="plot" placeholder="кг/м3" required>
+      <label for="floatingInput">Плотность, кг/м3</label>
+    </div>
+<!-- Модуль упругости, ГПа  mupr -->
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingPassword" name="mupr" placeholder="ГПа" required>
+      <label for="floatingPassword">Mодуль упругости, ГПа</label>
+    </div>
+<!-- Количество отвердителя, м.% hard_amount  -->
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingPassword" name="hard_amount" placeholder="м.%" required>
+      <label for="floatingPassword">Количество отвердителя, м.%</label>
+    </div>
+<!-- Содержание эпоксидных групп,%_2 smola -->
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingPassword" name="smola" placeholder="%_2" required>
+      <label for="floatingPassword">Количество отвердителя, м.%</label>
+    </div>
+<!-- Температура вспышки, С_2 temp -->
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingPassword" name="temp" placeholder="С_2" required>
+      <label for="floatingPassword">Температура вспышки, С_2</label>
+    </div>
+<!-- Поверхностная плотность, г/м2 pov_plot -->
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingPassword" name="pov_plot" placeholder="г/м2" required>
+      <label for="floatingPassword">Поверхностная плотность, г/м2</label>
+    </div>
+<!-- Модуль упругости при растяжении, ГПа mod_up_rast -->
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingPassword" name="mod_up_rast" placeholder="ГПа" required>
+      <label for="floatingPassword">Модуль упругости при растяжении, ГПа</label>
+    </div>
+<!-- Прочность при растяжении, МПа proch_rast -->
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingPassword" name="proch_rast" placeholder="МПа" required>
+      <label for="floatingPassword">Прочность при растяжении, МПа</label>
+    </div>
+<!-- Потребление смолы, г/м2 potr_smol -->
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingPassword" name="potr_smol" placeholder="г/м2" required>
+      <label for="floatingPassword">Потребление смолы, г/м2</label>
+    </div>
+<!-- Угол нашивки, град corner -->
+    <div class="form-floating">
+      <input type="number" class="form-control" id="floatingPassword" name="corner" min="0" max="90" step="1" placeholder="град" required>
+      <label for="floatingPassword">Угол нашивки, град (0...90)</label>
+    </div>
+<!-- Шаг нашивки step -->
+    <div class="form-floating">
+      <input type="number" class="form-control" id="floatingPassword" name="step" step='1' placeholder="мм" required>
+      <label for="floatingPassword">Шаг нашивки</label>
+    </div>
+<!-- Плотность нашивки кг/м3 plotn_nashivki -->
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingPassword" name="plotn_nashivki" placeholder="кг/м3" required>
+      <label for="floatingPassword">Плотность нашивки кг/м3</label>
+    </div>
+    <br>
+    <br>
+
+    <button class="w-100 btn btn-lg btn-success" type="submit">Рассчитать</button>
+    <p class="mt-5 mb-3 text-body-secondary text-center">Made by &copy; Ivan Nikitin</p>
+  </form>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</body>
+</html>
